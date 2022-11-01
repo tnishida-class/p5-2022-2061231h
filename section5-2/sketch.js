@@ -26,7 +26,7 @@ function ngmark(cx, cy, r){
 
 function regularPolygon(n, cx, cy, r){
   beginShape();
-  for(var i = 0; i < 5; i++){
+  for(let i = 0; i < 5; i++){
     let theta = TWO_PI * i * 1 / 5 - HALF_PI;
     let x = cx + cos(theta) * r;
     let y = cy + sin(theta) * r;
